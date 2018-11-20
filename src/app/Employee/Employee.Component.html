@@ -1,0 +1,26 @@
+<button  (click)="displayDetails()">
+showDetails
+</button>
+
+<table *ngIf="showDetails" [style.color] ="clr" [style.background-color]="bgcolor">
+    <tr>
+        <td colspan="2">
+            EmployeeDetails
+        </td>
+        </tr>
+        <tr>
+        <td>first name:</td>
+        <td [innerHtml]="firstName"></td>
+
+    </tr>
+    <tr>
+        <td>salary:</td>
+        <td>{{salary}}</td>
+
+    </tr>
+    <tr>
+        <td>department:</td>
+         <td>{{dept}}</td>
+    </tr>
+
+    </table>
